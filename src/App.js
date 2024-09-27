@@ -6,6 +6,11 @@ import card3 from "./assets/Megaphone.png";
 import card4 from "./assets/Communication.png";
 import linkcards from "./assets/linkcards.png";
 import fundoSec3 from "./assets/fundosec3.png";
+import fundoSec4 from "./assets/fundosec4.png";
+import wpp from "./assets/wpp.png";
+import gmail from "./assets/gmail.png";
+import insta from "./assets/insta.png";
+
 
 import "./App.css";
 
@@ -30,7 +35,7 @@ function App() {
           <h1>
             Conectando Abrigos, Adotantes e Petshops para um Futuro Melhor!
           </h1>
-          <button>Cadastre-se</button>
+          <button>Conheça</button>
         </div>
         <img src={bkg1} className="App-logo" alt="logo" />
       </div>
@@ -108,7 +113,7 @@ function App() {
               necessários, como vacinação e tratamentos especiais.
             </p>
           </div>
-          <div className="App-sec3-card" >
+          <div className="App-sec3-card">
             <h2>Adotantes</h2>
             <h6>Encontre Seu Novo Amigo</h6>
             <p>
@@ -141,6 +146,41 @@ function App() {
           </div>
         </div>
         <img src={fundoSec3} alt="" />
+      </div>
+
+      <div className="App-sec4">
+        <div className="App-sec4-box">
+          <h2>Beneficios de usar o RePet</h2>
+          <ul>
+            <li>
+              Conexão Direta: Encontre e se comunique diretamente com abrigos e
+              petshops.
+            </li>
+            <li>
+              Transparência: Acompanhe suas doações e veja o impacto positivo
+              que elas causam.
+            </li>
+            <li>
+              Facilidade: Tudo o que você precisa em um só lugar – adote, doe e
+              ajude de forma prática e rápida.{" "}
+            </li>
+          </ul>
+          <img src={fundoSec4} alt="" />
+        </div>
+      </div>
+      <div className="App-sec5">
+        <h4>Faça parte da mudança!</h4>
+        <h6>Seja um Adotante, um Parceiro ou um Doador e Transforme Vidas!</h6>
+        <button>Entre em contato</button>
+      </div>
+      <div className="Footer">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>© 2024 RePet. Todos os direitos reservados.</p>
+        <div>
+          <img src={gmail} alt="logo" />
+          <img src={wpp} alt="logo" />
+          <img src={insta} alt="logo" />
+        </div>
       </div>
     </div>
   );

@@ -62,7 +62,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* position: ; */
 }
 
@@ -73,7 +73,7 @@
 }
 
 .App-sec1 button {
-  padding: 20px;
+  padding: 15px;
   border: 2.5px solid #0A4A52;
   border-radius: 18px;
   color: #0E6975;
@@ -115,7 +115,20 @@
 .App-sec3 {
   background-color: #4F97CA;
   margin: 5vh 0;
-  padding: 10vh;
+  padding: 5vh 0 0;
+}
+
+.App-sec3 h1 {
+  color: #fff;
+
+}
+
+.App-sec3 h5 {
+  color: #fff;
+}
+
+.App-sec3 img {
+  height: 40vh;
 }
 
 .linkCard {
@@ -124,6 +137,7 @@
 }
 
 .App-sec3-cards {
+  margin: 5vh 0 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -148,12 +162,63 @@
   font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-sec4{
+padding: 15vh;
+display: flex;
+justify-content: center;
+color: #fff;
+}
+
+.App-sec4 img{
+ height: 40vh;
+ position: absolute;
+
+ 
   }
 
-  to {
-    transform: rotate(360deg);
-  }
+.App-sec4-box {
+  background-color: #0E6975;
+  text-wrap: wrap;
+  /* width: 150vh; */
+  padding: 5vh;
+  /* list-style: none; */
+  list-style: url(./assets/check.png);
+  border-radius: 24px;
+  text-align: left;
+}
+
+
+.App-sec4-box h2{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.App-sec5{
+  margin-top: 20vh;
+  padding: 5vh;
+  background-color: #0E6975;
+  color: #fff;
+}
+
+.App-sec5 button {
+  padding: 10px;
+  border: 2px solid #0A4A52;
+  border-radius: 16px;
+  color: #0E6975;
+  /* font-size: 30px; */
+  font-weight: 500;
+  /* width: 30vh; */
+}
+
+.Footer{
+  background-color: #0D1F2F;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Footer div img{
+  height: 32px;
 }
