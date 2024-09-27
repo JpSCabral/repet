@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #0D1F2F;
   min-height: 10vh;
@@ -24,6 +18,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
   position: fixed;
+}
+
+.App-header a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .App-list {
@@ -42,7 +41,12 @@
   border-radius: 5px;
   /* text-wrap: stable; */
 }
+.App h2{
+font-weight: bolder;
+  font-size: 60px;
 
+  
+}
 .App-sec1 {
   background-color: #0E6975;
   color: #fff;
@@ -82,12 +86,30 @@
   width: 30vh;
 }
 
+.Sobre {
+  padding-top: 20vh;
+  width: 100%;
+  background-color: #1d9fb0;
+  color: #fff;
+  
+}
+
+.Sobre div {
+    margin: 0 60vh;
+}
+
+.Sobre img {
+  height: 40vh;
+
+}
+
 .App-link {
   color: #61dafb;
 }
 
 .App-sec2 {
   margin: 5vh;
+  padding-top: 20vh ;
   /* background-color: red; */
 }
 
@@ -115,7 +137,7 @@
 .App-sec3 {
   background-color: #4F97CA;
   margin: 5vh 0;
-  padding: 5vh 0 0;
+  padding: 20vh 0;
 }
 
 .App-sec3 h1 {
@@ -127,10 +149,6 @@
   color: #fff;
 }
 
-.App-sec3 img {
-  height: 40vh;
-
-}
 
 .linkCard {
   height: 50px;
@@ -150,7 +168,7 @@
   background-color: #fff;
   padding: 2.5vh 5vh;
   width: 400px;
-  height: 400px;
+  height: 425px;
 }
 
 .App-sec3-card h2 {
@@ -163,19 +181,20 @@
   font-weight: bolder;
 }
 
-.App-sec4{
-padding: 15vh;
-display: flex;
-justify-content: center;
-color: #fff;
+.App-sec4 {
+  padding: 15vh;
+  display: flex;
+  justify-content: center;
+  color: #fff;
 }
 
-.App-sec4 img{
- height: 40vh;
- position: absolute;
+.App-sec4 img {
+  height: 40vh;
+  position: absolute;
 
- 
-  }
+
+}
+
 
 .App-sec4-box {
   background-color: #0E6975;
@@ -189,30 +208,35 @@ color: #fff;
 }
 
 
-.App-sec4-box h2{
+.App-sec4-box h2 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.App-sec5{
+.App-sec5 {
   margin-top: 20vh;
-  padding: 5vh;
+  padding: 5.5vh;
   background-color: #0E6975;
   color: #fff;
 }
+.boxctt{
 
-.App-sec5 button {
+  margin: 20px;
+}
+.contato{
   padding: 10px;
   border: 2px solid #0A4A52;
   border-radius: 16px;
   color: #0E6975;
   /* font-size: 30px; */
   font-weight: 500;
+  background-color: #fff;
+  text-decoration: none;
   /* width: 30vh; */
 }
 
-.Footer{
+.Footer {
   background-color: #0D1F2F;
   color: #fff;
   display: flex;
@@ -220,6 +244,6 @@ color: #fff;
   align-items: center;
 }
 
-.Footer div img{
+.Footer div img {
   height: 32px;
 }

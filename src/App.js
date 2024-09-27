@@ -11,7 +11,6 @@ import wpp from "./assets/wpp.png";
 import gmail from "./assets/gmail.png";
 import insta from "./assets/insta.png";
 
-
 import "./App.css";
 
 function App() {
@@ -21,10 +20,18 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <div>
           <ul className="App-list">
-            <li className="App-list-iten">Quem somos?</li>
-            <li className="App-list-iten">Como funciona?</li>
-            <li className="App-list-iten">Para quem é o RePet?</li>
-            <li className="App-list-iten">Beneficios</li>
+            <a href="#sobre">
+              <li className="App-list-iten">Quem somos?</li>
+            </a>
+            <a href="#Funcao">
+              <li className="App-list-iten">Como funciona?</li>{" "}
+            </a>
+            <a href="#quem">
+              <li className="App-list-iten">Para quem é o RePet?</li>
+            </a>
+            <a href="#benef">
+              <li className="App-list-iten">Beneficios</li>
+            </a>
             <li className="App-list-iten">Contato</li>
           </ul>
         </div>
@@ -35,19 +42,43 @@ function App() {
           <h1>
             Conectando Abrigos, Adotantes e Petshops para um Futuro Melhor!
           </h1>
-          <button>Conheça</button>
+          <a href="#sobre">
+            <button>Conheça</button>
+          </a>
         </div>
         <img src={bkg1} className="App-logo" alt="logo" />
       </div>
 
-      <div className="App-sec2">
+      <div className="Sobre" id="sobre">
+        <h2>Quem somos? </h2>
+        <div>
+          <p>
+            Repet é um projeto pensado para aqueles apaixonados por animais,
+            tendo em vista a pouca visibilidade de alguns abrigos de resgate a
+            animais em situações grave, pensamos em algo que conecte as pessoas
+            que precisam de ajuda, com as pessoas que querem ajudar esses
+            lugares.
+          </p>
+          <p>
+            Com o Repet, ajudamos você a conhecer um novo melhor amigo, adote um
+            animalzinho que busca um novo lar, encontre produtos de qualidade,
+            conecte-se com outros tutores e ajude abrigos a cuidarem de animais
+            resgatados e em outras necessidades. O Repet é a sua comunidade
+            amiga dos pets completa, oferecendo soluções para todas as etapas da
+            sua jornada com seu amiguinho.
+          </p>
+        </div>
+        <img src={fundoSec3} alt="" />
+      </div>
+
+      <div className="App-sec2" id="Funcao">
         <h2>Como funciona?</h2>
-        <h3>Adote, ajude e transforme vidas</h3>
+        <h4>Adote, ajude e transforme vidas</h4>
 
         <div className="Sec2-card">
           <div className="App-sec2-cards">
             <img src={card1} alt="" />
-            <h2>Você doa</h2>
+            <h3>Você doa</h3>
             <p>
               {" "}
               Doe dinheiro diretamente para abrigos parceiros através de métodos
@@ -60,7 +91,7 @@ function App() {
           <div className="App-sec2-cards">
             <img src={card2} alt="" />
 
-            <h2>Doação de Mantimentos e Serviços</h2>
+            <h3>Doação de Mantimentos e Serviços</h3>
             <p>
               {" "}
               Ofereça comida, brinquedos e outros suprimentos essenciais ou
@@ -72,7 +103,7 @@ function App() {
 
           <div className="App-sec2-cards">
             <img src={card3} alt="" />
-            <h2>Comunicação Direta com Abrigos</h2>
+            <h3>Comunicação Direta com Abrigos</h3>
             <p>
               {" "}
               Tire dúvidas, conheça os pets disponíveis para adoção e agende sua
@@ -83,7 +114,7 @@ function App() {
 
           <div className="App-sec2-cards">
             <img src={card4} alt="" />
-            <h2>Feedback Contínuo</h2>
+            <h3>Feedback Contínuo</h3>
             <p>
               {" "}
               Compartilhe suas experiências e sugestões para melhorarmos
@@ -92,9 +123,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="App-sec3">
-        <h1>Pra quem é o RePet?</h1>
-        <h5>Adote, ajude e transforme vidas</h5>
+      <div className="App-sec3" id="quem">
+        <h2>Pra quem é o RePet?</h2>
+        <h4>Adote, ajude e transforme vidas</h4>
         <div className="App-sec3-cards">
           <div className="App-sec3-card">
             <h2>Abrigos</h2>
@@ -145,10 +176,9 @@ function App() {
             </p>
           </div>
         </div>
-        <img src={fundoSec3} alt="" />
       </div>
 
-      <div className="App-sec4">
+      <div className="App-sec4" id="benef">
         <div className="App-sec4-box">
           <h2>Beneficios de usar o RePet</h2>
           <ul>
@@ -171,7 +201,11 @@ function App() {
       <div className="App-sec5">
         <h4>Faça parte da mudança!</h4>
         <h6>Seja um Adotante, um Parceiro ou um Doador e Transforme Vidas!</h6>
-        <button>Entre em contato</button>
+        <div className="boxctt">
+        <a href="https://wa.me/61983429904" className="contato">
+          Entre em contato
+        </a>
+        </div>
       </div>
       <div className="Footer">
         <img src={logo} className="App-logo" alt="logo" />
