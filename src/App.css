@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -14,24 +14,145 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0D1F2F;
+  min-height: 10vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: fixed;
+}
+
+.App-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: smaller;
+  list-style: none;
+  padding: 2.5vh;
+}
+
+.App-list-iten {
+  margin-left: 3vh;
+  background-color: #0E6975;
+  padding: 1vh;
+  border-radius: 5px;
+  /* text-wrap: stable; */
+}
+
+.App-sec1 {
+  background-color: #0E6975;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12.5vh;
+}
+
+.App-sec1 h1 {
+  font-size: 50px;
+  text-align: left;
+}
+
+.App-sec1 div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  /* position: ; */
+}
+
+.App-sec1 img {
+  height: 63vh;
+
+
+}
+
+.App-sec1 button {
+  padding: 20px;
+  border: 2.5px solid #0A4A52;
+  border-radius: 18px;
+  color: #0E6975;
+  font-size: 30px;
+  font-weight: 500;
+  width: 30vh;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.App-sec2 {
+  margin: 5vh;
+  /* background-color: red; */
+}
+
+
+.Sec2-card {
+  display: inline-block;
+  /* flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+}
+
+.App-sec2-cards {
+  background-color: #fff;
+  border: 1px solid #828282;
+  border-radius: 24px;
+  width: 50vh;
+  padding: 2.5vh;
+  margin: 2.5vh;
+}
+
+.App-sec2-cards img {
+  height: 40px;
+}
+
+.App-sec3 {
+  background-color: #4F97CA;
+  margin: 5vh 0;
+  padding: 10vh;
+}
+
+.linkCard {
+  height: 50px;
+
+}
+
+.App-sec3-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.App-sec3-card {
+  border: 2px solid #0E6975;
+  background-color: #fff;
+  padding: 2.5vh 5vh;
+  width: 400px;
+  height: 400px;
+}
+
+.App-sec3-card h2 {
+  color: #0E6975;
+  font-weight: bold;
+
+}
+
+.App-sec3-card h6 {
+  font-weight: bolder;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
