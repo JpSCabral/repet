@@ -206,6 +206,9 @@ function App() {
           Entre em contato
         </a>
         </div>
+        <h5>
+          repet.empresa@gmail.com
+        </h5>
       </div>
       <div className="Footer">
         <img src={logo} className="App-logo" alt="logo" />
